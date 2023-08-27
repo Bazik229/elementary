@@ -1,4 +1,4 @@
-package ru.calculator;
+package ru.condition;
 
 public class SqArea {
     public static double square(double p, double k) {
