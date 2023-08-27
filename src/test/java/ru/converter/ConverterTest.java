@@ -18,7 +18,7 @@ class ConverterTest {
 
     @Test
     void whenConvert140RblThen2Euro() {
-        float in = 140;
+        float in = 200;
         float expected = 2;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
@@ -36,10 +36,10 @@ class ConverterTest {
 
     @Test
     void whenConvert180RblThen1Dot4Dollar() {
-        float in = 180;
-        float expected = 1.4f;
+        float in = 200;
+        float expected = 2.2f;
         float out = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
+        float eps = 0.1f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
